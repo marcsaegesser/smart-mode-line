@@ -1542,7 +1542,7 @@ duplicated buffer names) from being displayed."
 (when sml/-hidden-modes-bound-by-user
   (setq sml/-hidden-modes-bound-by-user nil)
   (setq rm-blacklist (bound-and-true-p sml/hidden-modes)))
-(define-obsolete-variable-alias 'sml/hidden-modes 'rm-blacklist)
+(define-obsolete-variable-alias 'sml/hidden-modes 'rm-blacklist "1.23")
 
 (defun sml/generate-minor-modes ()
   "Extracts all rich strings necessary for the minor mode list."
